@@ -1,0 +1,25 @@
+{
+  "name": "AutoTrader.CA Listing Highlighter",
+  "description": "Better viewing experience and easier browsing by highlighting priority listings similar to Autotrader.com",
+  "author": {
+    "email": "martinidevelop@gmail.com"
+  },
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "info.html",
+    "default_icon": "icon16.png"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.autotrader.ca/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
