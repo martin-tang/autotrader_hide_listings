@@ -1,13 +1,17 @@
 {
-  "name": "AutoTrader.CA Listing Highlighter",
-  "description": "Better viewing experience and easier browsing by highlighting priority listings similar to Autotrader.com",
+  "name": "AutoTrader.CA Hide Sponsored Listings",
+  "description": "Hide or highligh sponsored listings, similar to Autotrader.com",
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "options.html",
   "author": {
     "email": "martinidevelop@gmail.com"
   },
-  "version": "0.0.0.1",
+  "version": "0.2",
   "manifest_version": 3,
   "action": {
-    "default_popup": "info.html",
+    "default_popup": "popup.html",
     "default_icon": "icon16.png"
   },
   "icons": {
@@ -19,7 +23,7 @@
   "content_scripts": [
     {
       "matches": ["https://www.autotrader.ca/*"],
-      "js": ["main.js"]
+      "js": ["autotrader_ca_highlight_hide.js"]
     }
   ]
 }

@@ -13,3 +13,7 @@
 - Spent a night boiling spaghetti to al dente and adding meat sauce + cheese
 - Works on first page and refreshs, changing the page # breaks it
 - Made a cute car favicon
+
+0.2
+
+new version, added ability to outright hide elements
