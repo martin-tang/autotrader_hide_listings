@@ -2,18 +2,79 @@
 <html>
   <head>
     <title>AutoTrader.CA Highlighter Options</title>
+    <style>
+      body {
+        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        max-width: 650px;
+        margin: 0 auto;
+        background: #f8f9fa;
+      }
+      .options-container {
+        background: white;
+        padding: 24px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      h1 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #e9ecef;
+        padding-bottom: 10px;
+      }
+      .option-group {
+        margin: 16px 0;
+        padding: 12px;
+        border-radius: 6px;
+        background: #f8f9fa;
+      }
+      .option-group:hover {
+        background: #f1f3f5;
+      }
+      label {
+        display: inline-block;
+        margin-left: 8px;
+        font-size: 16px;
+        color: #495057;
+      }
+      #save {
+        background: #0056b3;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 16px;
+      }
+      #save:hover {
+        background: #004494;
+      }
+      #status {
+        margin-top: 16px;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+        color: #2b7a39;
+        font-size: 14px;
+      }
+    </style>
   </head>
   <body>
-    <div>
+    <div class="options-container">
+      <h1>AutoTrader.CA Highlighter Settings</h1>
+      <div class="option-group">
         <input type="radio" id="highlightElementsRadio" name="option_select_radio" value="highlight" />
-        <label for="highlightElementsRadio">Highlight Sponsored Ads</label>
+        <label for="highlightElementsRadio">Highlight Sponsored Ads - Makes sponsored content easily identifiable</label>
       </div>
-      <div>
+      <div class="option-group">
         <input type="radio" id="hideElementsRadio" name="option_select_radio" value="hide" />
-        <label for="hideElementsRadio">Hide Sponsored Ads</label>
+        <label for="hideElementsRadio">Hide Sponsored Ads - Removes sponsored content from view</label>
       </div>
-    <div id="status"></div>
-    <button id="save">Save</button>
+      <button id="save">Save Settings</button>
+      <div id="status"></div>
+    </div>
     <script src="options.js"></script>
   </body>
 </html>

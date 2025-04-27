@@ -1,9 +1,68 @@
+<!DOCTYPE html>
 <html>
   <head>
-    </head>
-  <body style="width: 200px;">
-    <button id="go-to-options">Go to options</button>
-    <p>Thank you for your support. To disable this extension, disable it in Chrome.</p>
+    <style>
+      body {
+        width: 300px;
+        padding: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        margin: 0;
+      }
+      .popup-container {
+        background: white;
+      }
+      h2 {
+        color: #333;
+        font-size: 16px;
+        margin: 0 0 12px 0;
+      }
+      p {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 8px 0;
+      }
+      .status {
+        background: #e9ecef;
+        padding: 8px 12px;
+        border-radius: 4px;
+        margin: 12px 0;
+        font-size: 13px;
+      }
+      #go-to-options {
+        background: #0056b3;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        width: 100%;
+        margin-top: 12px;
+      }
+      #go-to-options:hover {
+        background: #004494;
+      }
+      .footer {
+        font-size: 12px;
+        color: #888;
+        margin-top: 12px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="popup-container">
+      <h2>AutoTrader.CA Highlighter</h2>
+      <div class="status">
+        Extension is active and running
+      </div>
+      <p>This extension helps identify sponsored content on AutoTrader.CA. Configure your preferences in the options page.</p>
+      <button id="go-to-options">Configure Settings</button>
+      <div class="footer">
+        To disable, use Chrome Extensions menu
+      </div>
+    </div>
+    <script src="popup.js"></script>
   </body>
-  <script src="popup.js"></script>
 </html>

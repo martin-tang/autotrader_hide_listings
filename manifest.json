@@ -1,6 +1,6 @@
 {
   "name": "AutoTrader.CA Hide Sponsored Listings",
-  "description": "Hide or highligh sponsored listings, similar to Autotrader.com",
+  "description": "Hide or highlight sponsored listings on AutoTrader.ca to improve your car searching experience",
   "permissions": [
     "storage"
   ],
@@ -8,7 +8,7 @@
   "author": {
     "email": "martinidevelop@gmail.com"
   },
-  "version": "0.2",
+  "version": "1.0",
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html",
@@ -23,7 +23,10 @@
   "content_scripts": [
     {
       "matches": ["https://www.autotrader.ca/*"],
-      "js": ["autotrader_ca_highlight_hide.js"]
+      "js": ["autotrader_hide_sponsored_listings_extension.js"]
     }
-  ]
+  ],
+  "homepage_url": "https://chromewebstore.google.com/detail/autotraderca-hide-sponsor/bjlfpfclblolnooaiaiejdfpenlkmaba",
+  "short_name": "AutoTrader.CA hide sponsored",
+  "minimum_chrome_version": "88"
 }
